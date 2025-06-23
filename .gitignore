@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# HuggingFace / large-model caches
+.cache/
+checkpoints/
+*.ckpt
+*.pt
+*.bin
+
+# macOS system files
+.DS_Store
+
+# other temp files
+*.log
+
+wav2vec2_checkpoints/
+data/*
+snippets/*
