@@ -48,6 +48,7 @@ All large model checkpoints are cached under:
 ```bash
 python accent_detect.py "https://www.youtube.com/watch?v=qaxwf3BIZIQ"
 ```
+The script takes 5 random snippet from the video in the link and then reports the accent for each of them and finally makes an overall decison together with two confidence measures.
 
 Typical output:
 
@@ -55,13 +56,13 @@ Typical output:
 ↓  Downloading & extracting audio …
 ✂︎  Creating snippets …
 🔍  Classifying accents …
-[Snippet 1]     indian   score=0.9999
-[Snippet 2]     indian   score=1.0000
-[Snippet 3]     indian   score=1.0000
-[Snippet 4]         us   score=0.9680
-[Snippet 5]     indian   score=0.9996
+[Audio Snippet 1]     indian   score=0.9999
+[Audio Snippet 2]     indian   score=1.0000
+[Audio Snippet 3]     indian   score=1.0000
+[Audio Snippet 4]         us   score=0.9680
+[Audio Snippet 5]     indian   score=0.9996
 
->>> Clip‑level prediction: indian   (p = 1.000, vote share = 80 %)
+>>> Overall prediction: indian   (p = 1.000, vote share = 80 %)
 ```
 
 ---

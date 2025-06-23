@@ -102,7 +102,7 @@ def classify_snippets(paths: List[pathlib.Path]) -> None:
     # ⬇︎ NEW – majority percentage
     vote_share = 100 * Counter(votes)[final_label] / len(votes)
 
-    print(f"\n>>> Clip-level prediction: {final_label}   "
+    print(f"\n>>> Overall prediction: {final_label}   "
           f"(p = {best_p.item():.3f}, vote share = {vote_share:.0f} %)")
 
 # --------------------------------------------------------------------
