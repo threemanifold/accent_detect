@@ -21,3 +21,5 @@ checkpoints/
 wav2vec2_checkpoints/
 data/*
 snippets/*
+
+/download_snippet*

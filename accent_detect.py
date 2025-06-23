@@ -88,7 +88,7 @@ def classify_snippets(paths: List[pathlib.Path]) -> None:
         label = text_lab[0] if isinstance(text_lab, (list, tuple)) else str(text_lab)
         score_val = float(score.item() if hasattr(score, "item") else score)
 
-        print(f"[Snippet {idx}] {label:>10}   score={score_val:.4f}")
+        print(f"[Audio Snippet {idx}] {label:>10}   score={score_val:.4f}")
 
         votes.append(label)              # ⬅︎ NEW
         log_probs = torch.log(out_prob + 1e-8)

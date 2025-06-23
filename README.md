@@ -46,7 +46,7 @@ All large model checkpoints are cached under:
 ## Quick start
 
 ```bash
-python accent_detect.py "https://www.youtube.com/watch?v=gmvvaobm7eQ"
+python accent_detect.py "https://www.youtube.com/watch?v=qaxwf3BIZIQ"
 ```
 
 Typical output:
@@ -77,10 +77,10 @@ Typical output:
 
 ### Reading the output
 
-| Field        | Meaning                                                                                                   |
-|--------------|-----------------------------------------------------------------------------------------------------------|
-| **p**        | Confidence score for the *overall* accent guess. A value near **1.00** means the model is almost certain; **0.50** would be a coin-flip. |
-| **vote&nbsp;share** | Percentage of the five snippets that agreed with the final guess. For example, **80 %** means 4 out of 5 snippets pointed to the same accent. |
+| Field        | Meaning                                                                                                                                                                                                                                                                                           |
+|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **p**        | Confidence score for the *overall* accent guess. A value near **1.00** means the model is almost certain; **0.50** would be a coin-flip. This is model's own judgement about its confidence. Based on my observation this is an overconfident model so we add second measure of confidence below. |
+| **vote&nbsp;share** | Percentage of the five snippets that agreed with the final guess. For example, **80 %** means 4 out of 5 snippets pointed to the same accent.                                                                                                                                                     |
 
 ## Customisation
 
